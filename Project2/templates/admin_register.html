@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Registration</title>
+    <!-- Add any additional CSS styles or links here -->
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Registration</h1>
+    </div>
+    <div class="admin-registration-form">
+        <form method="POST" action="{{ url_for('admin_register') }}">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

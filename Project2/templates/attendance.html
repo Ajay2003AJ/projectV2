@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - Student Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, {{ student.name }}!</h1>
+        <p>Overall Percentage: {{ overall_percentage }}%</p>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+    <div class="profile-box">
+        <h2>Attendance</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in attendance %}
+                    <tr>
+                        <td>{{ entry.date }}</td>
+                        <td>{{ entry.status }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

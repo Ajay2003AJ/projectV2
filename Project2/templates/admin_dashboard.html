@@ -1,0 +1,30 @@
+<!-- admin_dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head content) ... -->
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <a href="{{ url_for('admin_logout') }}">Logout</a>
+    </div>
+    <div class="student-list">
+        <h2>Student List</h2>
+        <ul>
+            {% for student in students %}
+                <li>
+                    {{ student.name }} -
+                    <a href="{{ url_for('admin_view_student', student_id=student.id) }}">View</a> |
+                    <a href="{{ url_for('admin_edit_student', student_id=student.id) }}">Edit</a> |
+                    <a href="{{url_for('admin_add_student',student_id=student.id) }}">ADD</a>
+                    <a href="{{ url_for('admin_delete_student', student_id=student.id) }}">Delete</a>
+                    <a href="{{url_for('admin_assign_subject',student_id=student.id) }}">Assign Subjects</a>
+                    
+
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

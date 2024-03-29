@@ -1,0 +1,63 @@
+body {
+    background-image: url("https://i.imgur.com/QD6EyQQ.jpeg");
+    background-size: cover;
+    margin: 0; /* Remove default body margin */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: larger;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 500px; /* Set the width of your container */
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: sandybrown; /* Set a white background color */
+}
+
+.admin-login-form {
+    text-align: center;
+    text-shadow: #e50914;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Make the inputs full width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cf1800;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #4854f7; /* Netflix red */
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+
+.button:hover {
+    background-color:greenyellow; 
+    color: black;
+    font-family: monospace;/* Lighter red on hover */
+}
+.input:hover{
+    border-color: aqua;
+}

@@ -1,0 +1,28 @@
+<!-- admin_login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="/static/styles2.css">
+    <!-- Add any additional CSS styles or links here -->
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Admin Login</h1>
+    <div class="admin-login-form">
+        <form method="POST" action="{{ url_for('admin_login') }}">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+            <br>
+
+            <button class="button" type="submit">Login</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

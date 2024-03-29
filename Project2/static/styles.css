@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.imgur.com/QD6EyQQ.jpg");
+    
+}
+body::before {
+        background: url('{{ url_for("https://i.imgur.com/QD6EyQQ.jpg" }}') fixed;
+    }
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: bisque;
+}
+
+.flash-message {
+    margin-bottom: 15px;
+}
+
+.flash-message p {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.flash-message .primary {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.flash-message .danger {
+    background-color: #FF5733;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    border-color: red;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4854f7; /* Netflix red */
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+button:hover{
+    color: aqua;
+    background-color: blue;
+}

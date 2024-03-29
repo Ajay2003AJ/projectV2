@@ -1,0 +1,21 @@
+<!-- admin_view_student.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head content) ... -->
+</head>
+<body>
+    <div class="container">
+        <h1>Admin - View Student</h1>
+        <a href="{{ url_for('admin_dashboard') }}">Back to Dashboard</a>
+        <p><strong>Name:</strong> {{ student.name }}</p>
+        <!-- Add other student details as needed -->
+        <p><strong>Date_of_birth:</strong> {{ student.date_of_birth }}</p>
+        <p><strong>phone_number:</strong> {{ student.phone_number }}</p>
+        <p><strong>Address:</strong> {{ student.address }}</p>
+        <p><strong>Email:</strong> {{ student.email }}</p>
+        <p><strong>Course:</strong> {{ student.Course}}</p>
+        <p><strong>section:</strong> {{ student.section }}</p>
+    </div>
+</body>
+</html>
